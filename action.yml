@@ -27,4 +27,8 @@ runs:
     using: "docker"
     image: "Dockerfile"
     args:
-        - "\"${{ inputs.clone-depth }}\" \"${{ inputs.branches }}\" \"${{ inputs.source-url }}\" \"${{ inputs.fork-url }}\" \"${{ inputs.dry-run }}\""
+        - ${{ inputs.clone-depth }}
+        - ${{ inputs.branches }}
+        - ${{ inputs.source-url }}
+        - ${{ inputs.fork-url }}
+        - ${{ inputs.dry-run }}
