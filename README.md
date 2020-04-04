@@ -9,8 +9,8 @@ This action locks a pull-request
     uses: sudo-bot/action-fork-sync@v1.0.1
     with:
         branches: master, STABLE, next
-        source-url: "https://github.com/myname/myproject.git"
-        fork-url: "https://github.com/myname/myproject.git"
+        source-url: "https://${{ secrets.BOT_TOKEN }}:x-oauth-basic@github.com/myname/myproject.git"
+        fork-url: "https://${{ secrets.BOT_TOKEN }}:x-oauth-basic@github.com/myname/myproject.git"
         dry-run: "true" # remove this line to make sync effective
         clone-depth: "100" # optional, defaults to 100
 ```

@@ -8,8 +8,8 @@ jobs:
             - name: sync fork
               uses: sudo-bot/action-fork-sync@v1.0.3
               with:
-                  source-url: "https://github.com/williamdes/phpmyadmintest.git"
-                  fork-url: "https://github.com/williamdes/phpmyadmintest.git"
+                  source-url: "https://${{ secrets.BOT_TOKEN }}:x-oauth-basic@github.com/williamdes/phpmyadmintest.git"
+                  fork-url: "https://${{ secrets.BOT_TOKEN }}:x-oauth-basic@github.com/williamdes/phpmyadmintest.git"
                   dry-run: "true"
                   clone-depth: "100"
                   branches: STABLE
