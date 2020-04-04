@@ -1,0 +1,30 @@
+name: "Lock pull-request"
+author: williamdes
+description: "Update your forks to their main repo"
+inputs:
+    clone-depth:
+        description: "The clone depth"
+        required: false
+        default: "100"
+    branches:
+        description: "The branches to update"
+        required: true
+    source-url:
+        description: "The source clone URL"
+        required: true
+    fork-url:
+        description: "The fork git URL"
+        required: true
+    dry-run:
+        description: "Use dry-run mode"
+        required: false
+        default: "false"
+
+branding:
+    icon: "git-branch"
+    color: blue
+runs:
+    using: "docker"
+    image: "Dockerfile"
+    args:
+        - "\"${{ inputs.clone-depth }}\" \"${{ inputs.branches }}\" \"${{ inputs.source-url }}\" \"${{ inputs.fork-url }}\" \"${{ inputs.dry-run }}\""
