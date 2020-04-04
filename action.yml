@@ -1,4 +1,4 @@
-name: "Lock pull-request"
+name: "Sync your forks"
 author: williamdes
 description: "Update your forks to their main repo"
 inputs:
