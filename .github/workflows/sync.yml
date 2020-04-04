@@ -6,7 +6,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: sync fork
-              uses: sudo-bot/action-fork-sync@v1.0.2
+              uses: sudo-bot/action-fork-sync@v1.0.3
               with:
                   source-url: "https://github.com/williamdes/phpmyadmintest.git"
                   fork-url: "https://github.com/williamdes/phpmyadmintest.git"
