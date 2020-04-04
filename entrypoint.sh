@@ -9,6 +9,7 @@ DRY_RUN="$5"
 echo "::debug DEPTH: ${DEPTH}"
 echo "::debug BRANCHES: ${BRANCHES}"
 echo "::debug SOURCE_URL: ${SOURCE_URL}"
+echo "::debug FORK_URL: ${FORK_URL}"
 echo "::debug DRY_RUN: ${DRY_RUN}"
 
 if [ ! -d .cloneDir-source ]; then
