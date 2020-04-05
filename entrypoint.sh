@@ -5,6 +5,7 @@ BRANCHES="$2"
 SOURCE_URL="$3"
 FORK_URL="$4"
 DRY_RUN="$5"
+METHOD="$6"
 
 echo "::debug DEPTH: ${DEPTH}"
 echo "::debug BRANCHES: ${BRANCHES}"

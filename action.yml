@@ -19,16 +19,21 @@ inputs:
         description: "Use dry-run mode"
         required: false
         default: "false"
+    sync-method:
+        description: "Update fork method"
+        required: false
+        default: "fast-forward"
 
 branding:
     icon: "git-branch"
     color: blue
 runs:
     using: "docker"
-    image: "docker://botsudo/action-fork-sync:v1.0.4"
+    image: "docker://botsudo/action-fork-sync:v1.0.5"
     args:
         - ${{ inputs.clone-depth }}
         - "${{ inputs.branches }}"
         - "${{ inputs.source-url }}"
         - "${{ inputs.fork-url }}"
         - ${{ inputs.dry-run }}
+        - ${{ inputs.sync-method }}

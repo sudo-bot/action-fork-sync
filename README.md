@@ -14,4 +14,5 @@ This action locks a pull-request
         fork-url: "https://${{ secrets.BOT_TOKEN }}:x-oauth-basic@github.com/myname/officialproject-fork.git"
         dry-run: "true" # remove this line to make sync effective
         clone-depth: "100" # optional, defaults to 100
+        sync-method: "fast-forward" # optional, defaults to "fast-forward". Can be "rebase", "merge" or "fast-forward".
 ```
