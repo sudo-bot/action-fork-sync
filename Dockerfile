@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache openssh-client git bash
+RUN apk add --no-cache git
 
 COPY entrypoint.sh /entrypoint.sh
 
