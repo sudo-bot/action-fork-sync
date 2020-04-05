@@ -28,7 +28,7 @@ runs:
     image: "docker://botsudo/action-fork-sync:v1.0.4"
     args:
         - ${{ inputs.clone-depth }}
-        - ${{ inputs.branches }}
-        - ${{ inputs.source-url }}
-        - ${{ inputs.fork-url }}
+        - "${{ inputs.branches }}"
+        - "${{ inputs.source-url }}"
+        - "${{ inputs.fork-url }}"
         - ${{ inputs.dry-run }}
