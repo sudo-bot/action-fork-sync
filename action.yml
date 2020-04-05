@@ -25,7 +25,7 @@ branding:
     color: blue
 runs:
     using: "docker"
-    image: "Dockerfile"
+    image: "botsudo/action-fork-sync:v1.0.4"
     args:
         - ${{ inputs.clone-depth }}
         - ${{ inputs.branches }}
